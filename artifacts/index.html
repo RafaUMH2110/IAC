@@ -17,7 +17,6 @@
   body { margin:0; font-family: "Segoe UI", system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--ink); }
   .header { background: linear-gradient(135deg, var(--blue-900), var(--blue-700)); color:#fff; padding: 56px 24px 92px; }
   .header-inner { max-width: 1100px; margin: 0 auto; text-align: center; }
-  .header-logo { margin: 0 auto 18px; display:block; filter: drop-shadow(0 4px 14px rgba(0,0,0,.18)); }
   .eyebrow { font-size: .85rem; letter-spacing:.03em; opacity:.85; margin-bottom: 14px; }
   .header h1 { font-size: 2.1rem; margin: 0 0 14px; font-weight: 700; }
   .header p.lede { max-width: 640px; margin: 0 auto 32px; opacity:.92; line-height:1.6; }
@@ -61,37 +60,6 @@
 <body>
   <header class="header">
     <div class="header-inner">
-      <svg class="header-logo" width="96" height="96" viewBox="0 0 120 120" aria-hidden="true">
-        <defs>
-          <linearGradient id="hiadCapGrad" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0%" stop-color="#ffffff"/>
-            <stop offset="100%" stop-color="#E0E7FF"/>
-          </linearGradient>
-        </defs>
-        <circle cx="60" cy="60" r="56" fill="rgba(255,255,255,0.10)" stroke="rgba(255,255,255,0.32)" stroke-width="2"/>
-        <path d="M 38 66 L 38 80 C 38 88 82 88 82 80 L 82 66 L 60 76 Z" fill="#E0E7FF"/>
-        <line x1="94" y1="48" x2="94" y2="72" stroke="#FDE68A" stroke-width="2.4"/>
-        <circle cx="94" cy="75" r="4" fill="#FDE68A"/>
-        <polygon points="60,34 100,50 60,66 20,50" fill="url(#hiadCapGrad)"/>
-        <g stroke="#4F46E5" stroke-width="1.6" stroke-linecap="round" fill="none" opacity="0.85">
-          <path d="M38 50 L50 50 L54 44 L60 50 L66 44 L70 50 L82 50"/>
-          <path d="M50 50 L50 56 L44 60"/>
-          <path d="M70 50 L70 56 L76 60"/>
-          <path d="M60 50 L60 58"/>
-        </g>
-        <g fill="#4F46E5">
-          <circle cx="38" cy="50" r="2.1"/>
-          <circle cx="82" cy="50" r="2.1"/>
-          <circle cx="54" cy="44" r="1.8"/>
-          <circle cx="66" cy="44" r="1.8"/>
-          <circle cx="44" cy="60" r="1.8"/>
-          <circle cx="76" cy="60" r="1.8"/>
-          <circle cx="60" cy="58" r="2.1"/>
-        </g>
-        <g transform="translate(92,30)" fill="#FDE68A">
-          <path d="M0 -9 L2.4 -1.6 L10 0 L2.4 1.6 L0 9 L-2.4 1.6 L-10 0 L-2.4 -1.6 Z"/>
-        </g>
-      </svg>
       <div class="eyebrow">RafaUMH2110 · UMH</div>
       <h1>Herramientas de IA para la Docencia (HIAD)</h1>
       <p class="lede">Aplicaciones de inteligencia artificial para diseño de moda, generación de contenido y automatización de procesos académicos.</p>
@@ -120,7 +88,7 @@
     Rafael Puerto (<a href="mailto:r.puerto@umh.es">r.puerto@umh.es</a>) · Última actualización: 3 de octubre de 2026
   </footer>
 
-<script id="catalog-data" type="application/json">[{"title": "DetectIApdfLite", "description": "Versión ligera de DetectIApdf: analiza un único documento PDF con un prompt reducido (menos tokens y menor coste, especialmente en documentos extensos) y genera un informe conciso de indicios de uso de IA, exportable a PDF.", "categories": ["ia", "docencia", "evaluacion"], "tags": ["deteccion ia", "forense", "pdf", "informes", "anthropic", "documento unico", "version ligera"], "client_only": true, "url": "https://rafaumh2110.github.io/Artifacts/detectiapdflite/"}, {"title": "GenImOd — Versión alumnos", "description": "Versión de GenImOd para el aula: genera imágenes de moda con Claude y FLUX, con modelos y parámetros limitados y fijados por el profesor.", "categories": ["ia", "diseno-creatividad", "generacion-contenido", "docencia"], "tags": ["Claude", "FLUX", "Docencia", "Imágenes", "Moda"], "client_only": true, "url": "https://rafaumh2110.github.io/Artifacts/genimod-alumnos/"}, {"title": "ConSultar", "description": "Mejora automáticamente tu consulta y la envía a Claude para obtener una respuesta completa en Markdown, exportable a Word o PDF.", "categories": ["ia", "generacion-contenido", "automatizacion"], "tags": ["Claude", "Markdown", "Word", "PDF", "Productividad"], "client_only": true, "url": "https://rafaumh2110.github.io/Artifacts/consultar/"}, {"title": "DetectIApdf", "description": "Analiza hasta 3 documentos PDF y genera un informe forense de indicios de uso de IA en su redacción, con exportación a PDF; pensada para profesorado universitario.", "categories": ["ia", "docencia", "evaluacion"], "tags": ["deteccion ia", "forense", "pdf", "informes", "anthropic"], "client_only": true, "url": "https://rafaumh2110.github.io/Artifacts/detectiapdf/"}, {"title": "DetectIApdfOne", "description": "Analiza un único documento PDF y genera un informe forense de indicios de uso de IA en su redacción, con exportación a PDF; pensada para profesorado universitario.", "categories": ["ia", "docencia", "evaluacion"], "tags": ["deteccion ia", "forense", "pdf", "informes", "anthropic", "documento unico"], "client_only": true, "url": "https://rafaumh2110.github.io/Artifacts/detectiapdfone/"}, {"title": "GenImOd", "description": "Genera imágenes de moda con IA: mejora la idea con Claude y crea la imagen final con FLUX (fal.ai). Versión completa, con modelos y parámetros configurables.", "categories": ["ia", "diseno-creatividad", "generacion-contenido", "docencia"], "tags": ["Claude", "FLUX", "fal.ai", "Imágenes", "Moda"], "client_only": true, "url": "https://rafaumh2110.github.io/Artifacts/genimod/"}, {"title": "GenPatMod", "description": "Genera patrones de corte de moda en SVG a partir de una idea y los exporta a PDF A4, usando Claude, OpenAI o Gemini. Incluye revisión del plan de piezas e historial local de generaciones.", "categories": ["ia", "diseno-creatividad", "automatizacion", "docencia"], "tags": ["Claude", "OpenAI", "Gemini", "SVG", "PDF", "Patrones"], "client_only": true, "url": "https://rafaumh2110.github.io/Artifacts/genpatmod/"}, {"title": "GenImOda", "description": "GenImOda: versión de GenImOd para el aula. Genera imágenes de moda con Claude y FLUX, con la opción de omitir la mejora del prompt con Claude, y con modelos y parámetros limitados por el profesor.", "categories": ["ia", "diseno-creatividad", "generacion-contenido", "docencia"], "tags": ["Claude", "FLUX", "Docencia", "Imágenes", "Moda", "GenImOda"], "client_only": true, "url": "https://rafaumh2110.github.io/Artifacts/genimoda/"}]</script>
+<script id="catalog-data" type="application/json">[{"title": "DetectIApdfLite", "description": "Versión ligera de DetectIApdf: analiza un único documento PDF con un prompt reducido (menos tokens y menor coste, especialmente en documentos extensos) y genera un informe conciso de indicios de uso de IA, exportable a PDF.", "categories": ["ia", "docencia", "evaluacion"], "tags": ["deteccion ia", "forense", "pdf", "informes", "anthropic", "documento unico", "version ligera"], "client_only": true, "url": "https://rafaumh2110.github.io/Artifacts/detectiapdflite/"}, {"title": "GenImOd — Versión alumnos", "description": "Versión de GenImOd para el aula: genera imágenes de moda con Claude y FLUX, con modelos y parámetros limitados y fijados por el profesor.", "categories": ["ia", "diseno-creatividad", "generacion-contenido", "docencia"], "tags": ["Claude", "FLUX", "Docencia", "Imágenes", "Moda"], "client_only": true, "url": "https://rafaumh2110.github.io/Artifacts/genimod-alumnos/"}, {"title": "ConSultar", "description": "Mejora automáticamente tu consulta y la envía a Claude para obtener una respuesta completa en Markdown, exportable a Word o PDF.", "categories": ["ia", "generacion-contenido", "automatizacion"], "tags": ["Claude", "Markdown", "Word", "PDF", "Productividad"], "client_only": true, "url": "https://rafaumh2110.github.io/Artifacts/consultar/"}, {"title": "DetectIApdf", "description": "Analiza hasta 3 documentos PDF y genera un informe forense de indicios de uso de IA en su redacción, con exportación a PDF; pensada para profesorado universitario.", "categories": ["ia", "docencia", "evaluacion"], "tags": ["deteccion ia", "forense", "pdf", "informes", "anthropic"], "client_only": true, "url": "https://rafaumh2110.github.io/Artifacts/detectiapdf/"}, {"title": "DetectIApdfOne", "description": "Analiza un único documento PDF y genera un informe forense de indicios de uso de IA en su redacción, con exportación a PDF; pensada para profesorado universitario.", "categories": ["ia", "docencia", "evaluacion"], "tags": ["deteccion ia", "forense", "pdf", "informes", "anthropic", "documento unico"], "client_only": true, "url": "https://rafaumh2110.github.io/Artifacts/detectiapdfone/"}, {"title": "GenImOd", "description": "Genera imágenes de moda con IA: mejora la idea con Claude y crea la imagen final con FLUX (fal.ai). Versión completa, con modelos y parámetros configurables.", "categories": ["ia", "diseno-creatividad", "generacion-contenido", "docencia"], "tags": ["Claude", "FLUX", "fal.ai", "Imágenes", "Moda"], "client_only": true, "url": "https://rafaumh2110.github.io/Artifacts/genimod/"}, {"title": "GenPatMod", "description": "Genera patrones de corte de moda en SVG a partir de una idea y los exporta a PDF A4, usando Claude, OpenAI o Gemini.", "categories": ["ia", "diseno-creatividad", "automatizacion", "docencia"], "tags": ["Claude", "OpenAI", "Gemini", "SVG", "PDF", "Patrones"], "client_only": true, "url": "https://rafaumh2110.github.io/Artifacts/genpatmod/"}, {"title": "GenImOda", "description": "GenImOda: versi&#243;n de GenImOd para el aula. Genera im&#225;genes de moda con Claude y FLUX, con la opci&#243;n de omitir la mejora del prompt con Claude, y con modelos y par&#225;metros limitados por el profesor.", "categories": ["ia", "diseno-creatividad", "generacion-contenido", "docencia"], "tags": ["Claude", "FLUX", "Docencia", "Im&#225;genes", "Moda", "GenImOda"], "client_only": true, "url": "https://rafaumh2110.github.io/Artifacts/genimoda/"}]</script>
 <script id="category-meta" type="application/json">{"automatizacion": {"label": "Automatización", "icon": "cog"}, "diseno-creatividad": {"label": "Diseño y creatividad", "icon": "palette"}, "docencia": {"label": "Docencia", "icon": "graduation-cap"}, "evaluacion": {"label": "Evaluación", "icon": "clipboard-check"}, "generacion-contenido": {"label": "Generación de contenido", "icon": "sparkles"}, "ia": {"label": "Inteligencia Artificial", "icon": "brain-circuit"}}</script>
 <script>
   const CATALOG = JSON.parse(document.getElementById('catalog-data').textContent);
